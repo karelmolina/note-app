@@ -1,0 +1,3 @@
+
+let notes = new NoteListView();
+

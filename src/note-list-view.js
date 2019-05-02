@@ -5,6 +5,8 @@ function NoteListView (notelist) {
 
 NoteListView.prototype.view = function() {
     return  this.notelist.map(function(note){
-        return "<li>"+ note.text + "</li>";
+        return ["<div>",
+                "<p>"+ note.text + "</p>",
+                "/<div>"].join("")
     });
 };
